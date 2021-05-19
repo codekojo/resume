@@ -1,0 +1,128 @@
+.link {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  text-rendering: optimizeLegibility;
+  color: white !important;
+}
+.xoxo {
+  background-color: black;
+  color: white;
+}
+
+.fPro {
+  background-color: black;
+}
+.banner-img {
+  height: 120px !important;
+  width: 120px !important;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.banner-section {
+  min-height: calc(100vh - 76px);
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .banner-section {
+    padding-right: 5rem;
+  }
+}
+.user__name {
+  font-size: 4rem;
+  /* font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif; */
+  font-family: "Source Code Pro", monospace;
+  /* font-family: "Raleway", sans-serif; */
+  /* font-family: "Caveat", cursive; */
+}
+
+.projex {
+  font-size: 2rem;
+  /* font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif; */
+  font-family: "Source Code Pro", monospace;
+  /* font-family: "Raleway", sans-serif; */
+  /* font-family: "Caveat", cursive; */
+}
+
+.user__title {
+  font-family: "Source Code Pro", monospace;
+  font-size: 2rem;
+}
+
+.user__info,
+.card-text {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.2rem;
+}
+
+.links {
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 0.1rem solid #61e786 !important;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: all 0.5s ease-in;
+  color: black;
+}
+
+.links:hover {
+  background-color: #61e786;
+  color: white;
+  text-decoration: none;
+}
+
+.card-title {
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.mon {
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+}
+.otherNotes {
+  font-size: 2rem;
+  /* font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif; */
+  font-family: "Source Code Pro", monospace;
+  /* font-family: "Raleway", sans-serif; */
+  /* font-family: "Caveat", cursive; */
+  color: white;
+}
+
+.notes {
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.9rem;
+}
+
+.icons__set {
+  display: flex;
+  align-items: baseline;
+}
+
+.contact {
+  background: black;
+}
+
+@media (max-width: 576px) {
+  .user__name {
+    font-size: 2rem;
+  }
+  .user__title {
+    font-size: 1rem;
+  }
+  .user__info,
+  .card-text {
+    font-size: 1rem;
+  }
+}

@@ -1,7 +1,14 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
+.okk {
+  position: absolute;
+  position: fixed;
+  left: 30px;
+  bottom: 10px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
