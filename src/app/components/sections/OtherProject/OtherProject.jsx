@@ -136,12 +136,12 @@ const OtherProjects = () => {
         )}
       </ul>
 
-      <a
+      <button
         className="links mt-5 px-4 text-white"
         onClick={() => setShowMore(!showMore)}
       >
         Show {showMore ? "Less" : "More"}
-      </a>
+      </button>
     </StyledProjectsSection>
   );
 };
