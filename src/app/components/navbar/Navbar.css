@@ -7,6 +7,13 @@
   text-rendering: optimizeLegibility;
   color: white !important;
 }
+
+.onn {
+  font-family: var(--font-mono);
+  font-size: var(--fz-xxs);
+  line-height: 1.75;
+  color: black;
+}
 .xoxo {
   background-color: black;
   color: white;
@@ -32,6 +39,9 @@
   .banner-section {
     padding-right: 5rem;
   }
+  .about-section-io {
+    padding-right: 80px;
+  }
 }
 .user__name {
   font-size: 4rem;
@@ -53,6 +63,12 @@
   font-family: "Source Code Pro", monospace;
   font-size: 2rem;
 }
+
+/* .card-body {
+  background-color: #343a40;
+  background-color: #4995aa9d;
+  color: white;
+} */
 
 .user__info,
 .card-text {
@@ -121,8 +137,18 @@
   .user__title {
     font-size: 1rem;
   }
-  .user__info,
-  .card-text {
+  .user__info {
     font-size: 1rem;
   }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .card-title {
+    font-size: 1.1rem;
+  }
+}
+
+.br-ab {
+  margin-top: 50px;
 }

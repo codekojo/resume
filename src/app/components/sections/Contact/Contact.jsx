@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { srConfig } from "../../config";
 import sr from "../../utils/sr";
 import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
+import { IconComponentLg } from "../../common/IconComponent";
 
 const email = "codewithkojo@gmail.com";
 
@@ -48,24 +49,24 @@ const Contact = () => {
     }
 
     sr.reveal(revealContainer.current, srConfig());
-  }, []);
+  }, [prefersReducedMotion]);
 
   return (
-    <footer className="contact mx-auto" style={{ height: "80vh" }}>
+    <footer className="contact mx-auto bg-blue" style={{ height: "80vh" }}>
       <StyledContactSection id="contact" ref={revealContainer}>
         <h2 className="numbered-heading overline">What’s Next?</h2>
 
-        <h2 className="projex text-white ">Get In Touch</h2>
+        <h2 className="projex text-white ">Let's Connect</h2>
 
         <p className="user__info text-white">
-          Although I'm not currently looking for any new opportunities, my inbox
-          is always open. Whether you have a question or just want to say hi,
-          I'll try my best to get back to you!
+          If you want to work on a project or have any questions, leave an email
+          and I will respond in no time.
         </p>
 
         <a className="links mt-5 px-4 text-white" href={`mailto:${email}`}>
           Say Hello
         </a>
+        <IconComponentLg />
       </StyledContactSection>
     </footer>
   );

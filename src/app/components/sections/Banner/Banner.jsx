@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { srConfig } from "../../config";
 import sr from "../../utils/sr";
 import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
-
+import swicman from "../../../../assets/swicman1.jpg";
 function Banner() {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -11,9 +11,8 @@ function Banner() {
     if (prefersReducedMotion) {
       return;
     }
-
     sr.reveal(revealContainer.current, srConfig());
-  }, []);
+  }, [prefersReducedMotion]);
 
   return (
     <section className="py-5 banner-section">
@@ -21,7 +20,7 @@ function Banner() {
         <div className="col-10 col-lg-3 px-5 py-5 mx-auto">
           <img
             className="img-fluid banner-img"
-            src="https://images.unsplash.com/photo-1515364310571-7b89b0bc681c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bmFrZWR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+            src={swicman}
             alt="new profile"
           />
         </div>
@@ -33,16 +32,18 @@ function Banner() {
           <h3 className="user__title text-muted">
             Web and Mobile Developer & AI Enthusiast.
           </h3>
-          <p className="user__info ">
-            I'm a Boston-based software engineer who specializes in building
-            (and occasionally designing) exceptional digital experiences.
-            Currently, I'm an engineer at Upstatement focused on building
-            accessible, human-centered products.
+          <p className="user__info">
+            I’m a remote-based software engineer who has passion for building
+            web application and cross-platform mobile apps. I have passion for
+            coding and creating digital experiences. I am an avid music lover
+            and listener
             <br />
             <br />
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, non
-            odio sint tempora totam quidem ullam repudiandae nesciunt! Laborum
-            quod perferendis officia voluptatem, voluptas neque, earum
+            Skilled in Cross-Platform Mobile App Development( using React Native
+            and Flutter), Backend Development (NodeJS, Express, MongoDB,
+            Firebase), Frontend Development (React). Strong engineering
+            professional with Btech. Computer Science & Engineering focused in
+            Software Engineering.
             <br />
           </p>
         </div>
@@ -52,13 +53,3 @@ function Banner() {
 }
 
 export default Banner;
-
-function IconComponent({ icon, name }) {
-  return (
-    <div className="icons__set ">
-      <p className="icons__title ">
-        <span>{icon}</span> {name}
-      </p>
-    </div>
-  );
-}
