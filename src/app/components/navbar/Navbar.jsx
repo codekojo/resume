@@ -47,7 +47,7 @@ function NavbarComponent() {
             Contact
           </Nav.Link>
         </Nav>
-        <ResumeLink />
+        {/* <ResumeLink /> */}
       </Navbar.Collapse>
     </Navbar>
   );
