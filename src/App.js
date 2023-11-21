@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Header from "./app/components/Header";
 import FeaturedProject from "./app/components/sections/FeaturedProject/FeaturedProject";
