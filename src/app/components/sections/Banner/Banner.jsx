@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { srConfig } from "../../config";
 import sr from "../../utils/sr";
 import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
-import swicman from "../../../../assets/swicman2.JPG";
+import swicman from "../../../../assets/swicman2.jpg";
 function Banner() {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
