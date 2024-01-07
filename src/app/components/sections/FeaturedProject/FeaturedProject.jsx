@@ -4,6 +4,8 @@ import FeaturedCard from "./FeaturedCard";
 import self from "../../../../assets/self.png";
 import renter from "../../../../assets/renterss.png";
 import vsimg from "../../../../assets/vsimg.png";
+import highschool from "../../../../assets/highschool.png";
+import easyrent from "../../../../assets/easyrent.png";
 
 function FeaturedProject() {
   const settings = {
@@ -12,7 +14,7 @@ function FeaturedProject() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     pauseOnHover: true,
   };
   return (
@@ -35,11 +37,25 @@ function FeaturedProject() {
 
 const DATA = [
   {
+    key: 10,
+    img: easyrent,
+    projectName: "Easy Rent Ghana",
+    link: "https://apps.apple.com/gh/app/easy-rent-ghana-homes-more/id1658827141",
+    desc: "This is a thriving real estate app with a growing userbase.",
+  },
+  {
     key: 1,
     img: self,
-    projectName: "Self Driving Car",
+    projectName: "Self Driving Car Using AI",
     link: "https://www.researchgate.net/publication/351736176_Full_Self_Driving_Car_Using_Computer_Vision_and_Artificial_Intelligence",
     desc: "This is a behavioural clone of a driving car using CNN and computer vision. A thesis-based project which was done in fulfillment of my degree. ",
+  },
+  {
+    key: 5,
+    img: highschool,
+    projectName: "High School Admissions",
+    link: "https://unitechsolutions.online/",
+    desc: "This is a high school admissions portal used by over 25+ schools in Ghana.",
   },
   {
     key: 2,

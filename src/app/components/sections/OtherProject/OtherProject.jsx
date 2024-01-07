@@ -7,6 +7,13 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { srConfig } from "../../config";
 import { FaFolder, FaGithub } from "react-icons/fa";
 import { GoLinkExternal } from "react-icons/go";
+import easyrent from "../../../../assets/easyrent.png";
+import twitter from "../../../../assets/twitter.png";
+import spotify from "../../../../assets/spotify.png";
+import ig from "../../../../assets/ig.png";
+import cakey from "../../../../assets/cakey.png";
+import music from "../../../../assets/music.png";
+import photography from "../../../../assets/photography.png";
 
 const OtherProjects = () => {
   const data = DATA;
@@ -35,15 +42,24 @@ const OtherProjects = () => {
   const projectsToShow = showMore ? projects : firstSix;
 
   const projectInner = (nodes) => {
-    const { github, external, title, tech, desc, toGithub } = nodes;
+    const { github, external, title, tech, desc, toGithub, imgBackground } =
+      nodes;
+    const divStyle = {
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${imgBackground})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    };
 
     return (
       <a href={toGithub ? github : tech} target="_blank" rel="noreferrer">
-        <div className="project-inner text-left">
+        <div
+          className="project-inner text-left"
+          style={imgBackground && divStyle}
+        >
           <header>
             <div className="project-top">
               <div className="folder">
-                <FaFolder color="black " />
+                <FaFolder color="white " />
               </div>
               <div className="project-links">
                 {github && (
@@ -53,7 +69,7 @@ const OtherProjects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <FaGithub color="black " />
+                    <FaGithub color="white " />
                   </a>
                 )}
                 {external && (
@@ -71,7 +87,7 @@ const OtherProjects = () => {
             </div>
 
             <h3 className="project-title">
-              <a href={external} className="mon">
+              <a href={external} className="mon" target="_blank">
                 {title}
               </a>
             </h3>
@@ -232,7 +248,8 @@ const StyledProject = styled.li`
       display: flex;
       align-items: center;
       margin-right: -10px;
-      color: var(--light-slate);
+      color: white;
+      // color: var(--light-slate);
       a {
         display: flex;
         justify-content: center;
@@ -258,7 +275,7 @@ const StyledProject = styled.li`
 
     a {
       position: static;
-      color: black;
+      color: white;
       &:before {
         content: "";
         display: block;
@@ -272,7 +289,7 @@ const StyledProject = styled.li`
     }
   }
   .project-description {
-    color: black;
+    color: white;
     font-size: 17px;
     a {
       display: inline-block;
@@ -313,7 +330,7 @@ const StyledProject = styled.li`
     flex-grow: 1;
     flex-wrap: wrap;
     padding: 0;
-    color: black;
+    color: white;
     margin: 20px 0 0 0;
     list-style: none;
     li {
@@ -334,6 +351,16 @@ const DATA = [
     desc: "A twitter clone built in React Native with functionalities of navigation.",
     github: "https://github.com/codekojo/twitter-Clone",
     toGithub: true,
+    imgBackground: twitter,
+  },
+  {
+    title: "Cakey Cake",
+    tech: ["React", "Bootstrap"],
+    external: "https://peaceful-colden-9338c9.netlify.app/",
+    desc: "A simple react app for a cake company",
+    github: "https://github.com/codekojo/cakey-cake",
+    toGithub: false,
+    imgBackground: cakey,
   },
   {
     title: "Spotify Clone",
@@ -341,6 +368,7 @@ const DATA = [
     desc: "A spotify clone built in React Native with navigation and animation.",
     toGithub: true,
     github: "https://github.com/codekojo/spotify-clone",
+    imgBackground: spotify,
   },
   {
     title: "Instagram Clone",
@@ -348,6 +376,7 @@ const DATA = [
     desc: "An instagram clone built in React Native with functionalities of navigation.",
     toGithub: true,
     github: "https://github.com/codekojo/Instagram-Clone",
+    imgBackground: ig,
   },
   {
     title: "Capture Portfolio",
@@ -356,6 +385,7 @@ const DATA = [
     desc: "A web based capture portfolio website with animation framework - framer motion, built using react.js",
     toGithub: false,
     github: "https://github.com/codekojo/capture-site",
+    imgBackground: photography,
   },
   {
     title: "Music App",
@@ -364,6 +394,7 @@ const DATA = [
     desc: "A web based music app that fetches music from Napster API to be added to the library. Users can play or pause any of the songs from the library.",
     toGithub: false,
     github: "https://github.com/codekojo/music-react",
+    imgBackground: music,
   },
   {
     title: "Photography Portfolio",
@@ -381,14 +412,7 @@ const DATA = [
     toGithub: false,
     github: "https://github.com/codekojo/Advice-Generator-React",
   },
-  {
-    title: "Cakey Cake",
-    tech: ["React", "Bootstrap"],
-    external: "https://peaceful-colden-9338c9.netlify.app/",
-    desc: "A simple react app for a cake company",
-    github: "https://github.com/codekojo/cakey-cake",
-    toGithub: false,
-  },
+
   {
     title: "JS Conf",
     tech: ["React", "Bootstrap"],
