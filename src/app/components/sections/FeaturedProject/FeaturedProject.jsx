@@ -6,6 +6,7 @@ import renter from "../../../../assets/renterss.png";
 import vsimg from "../../../../assets/vsimg.png";
 import highschool from "../../../../assets/highschool.png";
 import easyrent from "../../../../assets/easyrent.png";
+import sophie from "../../../../assets/sophie.png";
 
 function FeaturedProject() {
   const settings = {
@@ -14,7 +15,7 @@ function FeaturedProject() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
   };
   return (
@@ -56,6 +57,13 @@ const DATA = [
     projectName: "High School Admissions",
     link: "https://unitechsolutions.online/",
     desc: "This is a high school admissions portal used by over 25+ schools in Ghana.",
+  },
+  {
+    key: 51,
+    img: sophie,
+    projectName: "Immigration Web App for A Client",
+    link: "https://sofftlandinginternational.com/",
+    desc: "This is a web application that assist people to Settle In Canada",
   },
   {
     key: 2,
