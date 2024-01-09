@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import resume from "../common/resume.pdf";
+import resume from "../common/v2Clinton.pdf";
 import cl from "../../../assets/cll.png";
 
 import "./Navbar.css";
@@ -47,7 +47,7 @@ function NavbarComponent() {
             Contact
           </Nav.Link>
         </Nav>
-        {/* <ResumeLink /> */}
+        <ResumeLink />
       </Navbar.Collapse>
     </Navbar>
   );
