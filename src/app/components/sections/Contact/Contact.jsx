@@ -5,7 +5,7 @@ import sr from "../../utils/sr";
 import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
 import { IconComponentLg } from "../../common/IconComponent";
 
-const email = "codewithkojo@gmail.com";
+const email = "agyemangduahc@gmail.com";
 
 const StyledContactSection = styled.section`
   max-width: 600px;

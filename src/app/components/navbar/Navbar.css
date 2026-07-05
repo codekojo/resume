@@ -22,6 +22,64 @@
 .fPro {
   background-color: black;
 }
+
+.projects-section {
+  padding-top: 4rem !important;
+}
+
+.featured-card {
+  width: 100%;
+  background-color: #111;
+  border: 1px solid #222;
+}
+
+.featured-card .card-img-top {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.featured-card__placeholder {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #4995aa;
+  background: linear-gradient(145deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+.project-category {
+  margin-bottom: 3.5rem;
+}
+
+.project-category:last-child {
+  margin-bottom: 0;
+}
+
+.project-category__label {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #61e786;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(97, 231, 134, 0.45);
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.banner-section .user__info {
+  max-width: none;
+  line-height: 1.65;
+}
+
+.banner-section .user__info--personal {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
 .banner-img {
   height: 120px !important;
   width: 120px !important;
@@ -30,21 +88,45 @@
 }
 
 .banner-section {
-  min-height: calc(100vh - 76px);
+  min-height: auto;
+  padding-bottom: 5rem;
   background-color: black;
   color: white;
+  text-align: left;
 }
 
-@media (min-width: 992px) {
-  .banner-section {
-    padding-right: 5rem;
-  }
-  .about-section-io {
-    padding-right: 80px;
+.banner-inner {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  text-align: left;
+}
+
+.banner-content {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.banner-section .user__title {
+  color: #61e786;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .banner-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
   }
 }
 .user__name {
-  font-size: 4rem;
+  font-size: 2.75rem;
   /* font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif; */
   font-family: "Source Code Pro", monospace;
   /* font-family: "Raleway", sans-serif; */
@@ -61,7 +143,7 @@
 
 .user__title {
   font-family: "Source Code Pro", monospace;
-  font-size: 2rem;
+  font-size: 1.35rem;
 }
 
 /* .card-body {
@@ -73,7 +155,8 @@
 .user__info,
 .card-text {
   font-family: "Source Code Pro", monospace;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .links {

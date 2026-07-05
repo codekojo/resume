@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 function IconComponentMain() {
@@ -8,11 +8,6 @@ function IconComponentMain() {
       <IconComponent
         icon={<GoLocation size={20} color="#DB4437" />}
         name="Remote"
-      />
-      <IconComponent
-        icon={<FaTwitter color="#1DA1F2" size={20} />}
-        name="kojoswic"
-        link="https://twitter.com/kojoswic"
       />
       <IconComponent
         icon={<FaLinkedin color="#2867B2" size={20} />}
@@ -26,8 +21,8 @@ function IconComponentMain() {
       />
       <IconComponent
         icon={<AiOutlineMail size={20} color="white" />}
-        name="codewithkojo@gmail.com"
-        link="mailto:codewithkojo@gmail.com"
+        name="agyemangduahc@gmail.com"
+        link="mailto:agyemangduahc@gmail.com"
       />
       <div
         style={{ width: "0.1rem", backgroundColor: "grey", height: "150px" }}
@@ -46,11 +41,6 @@ function IconComponentLg() {
         name="Remote"
       />
       <IconComponent
-        icon={<FaTwitter color="#1DA1F2" size={20} />}
-        name="kojoswic"
-        link="https://twitter.com/kojoswic"
-      />
-      <IconComponent
         icon={<FaLinkedin color="#2867B2" size={20} />}
         name="agyemangduahc"
         link="https://www.linkedin.com/in/agyemangduah/"
@@ -62,8 +52,8 @@ function IconComponentLg() {
       />
       <IconComponent
         icon={<AiOutlineMail size={20} color="white" />}
-        name="codewithkojo@gmail.com"
-        link="mailto:codewithkojo@gmail.com"
+        name="agyemangduahc@gmail.com"
+        link="mailto:agyemangduahc@gmail.com"
       />
     </div>
   );
