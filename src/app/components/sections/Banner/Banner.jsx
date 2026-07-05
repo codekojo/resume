@@ -15,36 +15,23 @@ function Banner() {
   }, [prefersReducedMotion]);
 
   return (
-    <section className="py-5 banner-section">
-      <div className="row mr-0 ml-0">
-        <div className="col-10 col-lg-3 px-5 py-5 mx-auto">
-          <img
-            className="img-fluid banner-img"
-            src={swicman}
-            alt="new profile"
-          />
-        </div>
-        <div
-          className="col-10 col-lg-9 px-4 py-5 text-left mx-auto border rounded"
-          ref={revealContainer}
-        >
-          <h2 className="user__name">Hi, I'm CLINTON.</h2>
-          <h3 className="user__title text-muted">
-            Web and Mobile Developer & AI Enthusiast.
-          </h3>
+    <section className="py-4 banner-section">
+      <div className="banner-inner">
+        <img
+          className="banner-img"
+          src={swicman}
+          alt="Clinton Agyemang Duah"
+        />
+        <div className="banner-content" ref={revealContainer}>
+          <h2 className="user__name">Hi, I'm Clinton.</h2>
+          <h3 className="user__title text-muted">Software Engineer</h3>
           <p className="user__info">
-            I’m a remote-based software engineer who has passion for building
-            web application and cross-platform mobile apps. I have passion for
-            coding and creating digital experiences. I am an avid music lover
-            and listener
-            <br />
-            <br />
-            Skilled in Cross-Platform Mobile App Development( using React Native
-            and Flutter), Backend Development (NodeJS, Express, MongoDB,
-            Firebase), Frontend Development (React). Strong engineering
-            professional with Btech. Computer Science & Engineering focused in
-            Software Engineering.
-            <br />
+            Software Engineer with 4+ years designing and developing production
+            mobile applications, full-stack web applications, scalable software
+            systems and backend services. Skilled in React Native, React,
+            TypeScript, Express, and Python, with expertise in REST APIs, AWS,
+            and CI/CD. Proven ability to take products from concept to
+            production and deliver scalable, user-focused solutions.
           </p>
         </div>
       </div>

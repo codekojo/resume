@@ -37,9 +37,6 @@ function NavbarComponent() {
 
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mx-auto">
-          <Nav.Link href="#about" className="link">
-            About
-          </Nav.Link>
           <Nav.Link href="#projects" className="link">
             Projects
           </Nav.Link>
