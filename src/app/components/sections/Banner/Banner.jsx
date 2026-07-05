@@ -24,7 +24,7 @@ function Banner() {
         />
         <div className="banner-content" ref={revealContainer}>
           <h2 className="user__name">Hi, I'm Clinton.</h2>
-          <h3 className="user__title text-muted">Software Engineer</h3>
+          <h3 className="user__title">Software Engineer</h3>
           <p className="user__info">
             Software Engineer with 4+ years designing and developing production
             mobile applications, full-stack web applications, scalable software
@@ -32,6 +32,12 @@ function Banner() {
             TypeScript, Express, and Python, with expertise in REST APIs, AWS,
             and CI/CD. Proven ability to take products from concept to
             production and deliver scalable, user-focused solutions.
+          </p>
+          <p className="user__info user__info--personal">
+            Originally from Ghana, currently based in Fredericton, Canada. I
+            play basketball, football, table tennis, skating, cycling, and
+            volleyball. I'm always up for trying something new. I love music with
+            real lyricism too: Nas, J. Cole, Sade, that kind of thing.
           </p>
         </div>
       </div>
